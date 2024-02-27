@@ -8,12 +8,13 @@ npm install -g typescript
 
 ## 数据类型
 
-- 基础类型: boolean,string,number,array,tuple,enum,null,undefined,object,void,never,any
+- 基础类型:
+  boolean,string,number,array,tuple,enum,null,undefined,object,void,never,any
 - 高级类型: union,Nullable,Literal
 
 ## Number
 
-- 对数字的定义只有一个很笼统的number来表示。
+- 对数字的定义只有一个很笼统的 number 来表示。
 - 既能表示整数、也能表示浮点数，甚至可以表示正负数。
 
 ```TypeScript
@@ -34,14 +35,14 @@ let c =`hello${a}`
 
 - 真，假
 
-```
-let istrue:boolean=true
+```TS
+let istrue: boolean = true;
 ```
 
 ## Array（数组）
 
 - 数组中可以存放任意类型的数据
-- js中数组宽容度非常大，而TS也很好的继承了这一点
+- js 中数组宽容度非常大，而 TS 也很好的继承了这一点
 
 ```TypeScript
 // 单一类型数组
@@ -86,7 +87,7 @@ enum Color {
 }
 ```
 
-## any与unknown
+## any 与 unknown
 
 ## tsconfig.json
 
@@ -100,9 +101,9 @@ enum Color {
       "dom.iterable",
       "esnext"
     ],
-    "allowJs": true, // 允许混合编译JavaScript文件 
+    "allowJs": true, // 允许混合编译JavaScript文件
     "skipLibCheck": true,
-    "esModuleInterop": true, // 允许我们使用commonjs的方式import默认文件,  import React from 'react'  
+    "esModuleInterop": true, // 允许我们使用commonjs的方式import默认文件,  import React from 'react'
     // "esModuleInterop": false, import * as React from 'react'
     "allowSyntheticDefaultImports": true,
     "strict": true,
